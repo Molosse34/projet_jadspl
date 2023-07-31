@@ -1,0 +1,87 @@
+import socket
+import time 
+import pyautogui 
+
+#
+def clavier(key):                   
+    if data == key:             
+        pyautogui.press(key)
+
+#create the socket
+sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+server_address = ('192.168.56.1',1233)
+sock.bind(server_address)
+sock.listen()
+print("Waiting for a connection...")
+
+# Accept a client connection
+conn, addr = sock.accept()
+
+print("Connection established with", addr)
+
+time.sleep(0.1)
+
+while True:
+    data_encode = conn.recv(1024)
+    data = data_encode.decode('utf8')
+    
+    clavier('a')
+    time.sleep(0.1)
+    clavier('b')
+    time.sleep(0.1)
+    clavier('c')
+    time.sleep(0.1)
+    clavier('d')
+    time.sleep(0.1)
+    clavier('e')
+    time.sleep(0.1)
+    clavier('f')
+    time.sleep(0.1)
+    clavier('g')
+    time.sleep(0.1)
+    clavier('h')
+    time.sleep(0.1)
+    clavier('i')
+    time.sleep(0.1)
+    clavier('j')
+    time.sleep(0.1)
+    clavier('k')
+    time.sleep(0.1)
+    clavier('l')
+    time.sleep(0.1)
+    clavier('m')
+    time.sleep(0.1)
+    clavier('n')
+    time.sleep(0.1)
+    clavier('o')
+    time.sleep(0.1)
+    clavier('p')
+    time.sleep(0.1)
+    clavier('q')
+    time.sleep(0.1)
+    clavier('r')
+    time.sleep(0.1)
+    clavier('s')
+    time.sleep(0.1)
+    clavier('t')
+    time.sleep(0.1)
+    clavier('u')
+    time.sleep(0.1)
+    clavier('v')
+    time.sleep(0.1)
+    clavier('w')
+    time.sleep(0.1)
+    clavier('x')
+    time.sleep(0.1)
+    clavier('y')
+    time.sleep(0.1)
+    clavier('z') 
+    time.sleep(0.1)
+    clavier('space')
+    time.sleep(0.1)
+    clavier('shift')
+    time.sleep(0.1)
+    clavier('tab')
+    time.sleep(0.1)
+    clavier('ctrl')
+    time.sleep(0.1)
