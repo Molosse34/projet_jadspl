@@ -5,7 +5,7 @@ import keyboard
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-server_address = ('192.168.1.101', 1233)
+server_address = ('192.168.1.163', 1233)
 
 sock.bind(server_address)
 
